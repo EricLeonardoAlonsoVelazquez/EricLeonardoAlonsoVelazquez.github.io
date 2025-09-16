@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #2c3e50;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+    width: 350px;
+    height: 200px;
+    border-radius: 25%;
+    object-fit: cover;
+    border: 2px solid white;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin: 25px 0 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3498db;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin: 15px 0 8px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+section {
+    padding: 25px;
+    background: white;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.skill-category, .project {
+    background: #f8f9fa;
+    padding: 18px;
+    border-radius: 6px;
+    border-left: 4px solid #3498db;
+}
+
+.project {
+    border-left-color: #2c3e50;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.skill {
+    background: #e8f4fc;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 2px solid #3498db;
+    position: relative;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #3498db;
+    border-radius: 50%;
+    left: -7px;
+    top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .skills-grid, .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    section {
+        padding: 18px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+}
